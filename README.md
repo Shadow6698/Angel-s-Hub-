@@ -43,7 +43,7 @@ end
 local mainButton = Instance.new("TextButton")
 mainButton.Size = UDim2.new(0, 200, 0, 50)
 mainButton.Position = UDim2.new(0.1, 0, 0.1, 0)
-mainButton.Text = "🥼🪽 Angel\"s hub 🪽🥼"
+mainButton.Text = "🥼 Angel\"s hub 🥼"
 mainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 mainButton.Parent = screenGui
@@ -67,7 +67,7 @@ mainButton.MouseButton1Click:Connect(function()
 
 	local title = Instance.new("TextLabel")
 	title.Size = UDim2.new(1, 0, 0, 50)
-	title.Text = "🥼🪽 Angel\"s hub 🪽🥼 - Biblioteca de Scripts"
+	title.Text = "🥼 Angel\"s hub 🥼 - Biblioteca de Scripts"
 	title.TextSize = 20
 	title.TextColor3 = Color3.fromRGB(0, 0, 0)
 	title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
