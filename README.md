@@ -19,8 +19,7 @@ local Tabs = {
     Scripts = Window:AddTab({ Title = "Scripts", Icon = "code" }),
     DeadRealls = Window:AddTab({ Title = "Dead Realls [Trilhos Mortos]", Icon = "skull" }),
     Comandos = Window:AddTab({ Title = "Scripts de Comandos", Icon = "terminal" }),
-    BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }),
-    Instrucoes = Window:AddTab({ Title = "Instruções", Icon = "book-open-check" }),  -- aba nova com ícone
+    BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }), -- NOVA ABA AQUI
 }
 
 -- Créditos
@@ -143,29 +142,3 @@ for _, script in ipairs(bloxFruitsScripts) do
         end
     })
 end
-
--- Conteúdo da aba Instruções
-Tabs.Instrucoes:AddParagraph({
-    Title = "Comandos do Infinite Yield",
-    Content = [[
-Aqui estão comandos úteis do Infinite Yield para você usar:
-
-- fly: ativa voo
-- unfly: desativa voo
-- vfly: voo suave
-- noclip: andar por objetos
-- clip: voltar ao normal
-- speed [número]: muda velocidade, ex: speed 100
-- tpwalk [número]: anda com teleporte, ex: tpwalk 10
-- swim: nadar
-- unswim: parar de nadar
-
-Comandos com players:
-- view [nick]: ver a câmera do jogador
-- unview: parar de ver
-- bang [nick]: animação no jogador
-- unbang [nick]: cancelar animação
-- loopgoto [nick]: teleportar sempre para o jogador
-- unloopgoto: parar teleportar
-]])
-
