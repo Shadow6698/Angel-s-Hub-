@@ -1,7 +1,7 @@
 -- Carregar a biblioteca Fluent
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local version = "2" -- Versão manual
 
@@ -40,11 +40,7 @@ local scripts = {
 }
 
 local scriptsNovos = {
-    {"Chaos Hub",      "https://rawscript.net/raw/Brookhaven-RP-Chaoshub-V2-35722"},
-    {"Chat Logs",      "https://raw.githubusercontent.com/Shadow6698/Chat-logs/main/main.txt"},
-    {"Free Gamepass",  "https://raw.githubusercontent.com/Kaitofyp/Gamepass-Script-V.1/refs/heads/main/Op%20script"},
-    {"Grude Mira",     "https://raw.githubusercontent.com/Shadow6698/Aimbot/main/Main.txt"},
-    {"Hub Novo",       "https://raw.githubusercontent.com/ashleyQwma/Arabic-Archon/refs/heads/main/Arsbic"},
+    -- Removi os scripts solicitados
     {"Nameless Admin", "https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"},
     {"Sander X",       "https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/New.lua"},
     {"System Broken",  "https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"},
@@ -90,6 +86,4 @@ Fluent:Notify({
     Content = "Script carregado com sucesso!"
 })
 
--- Aqui não tem botão para abrir/fechar o hub
--- Se quiser abrir o hub, você pode programar outro jeito (ex: tecla, comando, etc)
-
+-- O hub inicia invisível, sem botão para abrir
