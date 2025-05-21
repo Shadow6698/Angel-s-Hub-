@@ -18,6 +18,7 @@ local Tabs = {
     Creditos = Window:AddTab({ Title = "Créditos", Icon = "heart" }),
     Scripts = Window:AddTab({ Title = "Scripts", Icon = "code" }),
     DeadRealls = Window:AddTab({ Title = "Dead Realls [Trilhos Mortos]", Icon = "skull" }),
+    Comandos = Window:AddTab({ Title = "Scripts de Comandos", Icon = "terminal" }),
 }
 
 -- Créditos
@@ -36,7 +37,7 @@ local scripts = {
     {"R4D",             "https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script"},
     {"Rael Hub",        "https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt"},
     {"Save Servers",    "https://raw.githubusercontent.com/Shadow6698/Sabe-servers/main/Main.txt"},
-    {"Nameless Admin",  "https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"},
+    {"Nameless Admin",  "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"},
     {"Sander X",        "https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/New.lua"},
     {"System Broken",   "https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"},
     {"View Itens",      "https://raw.githubusercontent.com/Shadow6698/View-itens/main/main.txt"},
@@ -46,13 +47,33 @@ local scripts = {
     {"aimemotes",       "https://raw.githubusercontent.com/Shadow6698/Lockemotes/main/Main.txt"},
     {"Tiger Hub",       "https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20V3.5%20Fixed"},
     {"Aimbot",          "https://pastebin.com/raw/qtZt0Nzb"},
-    {"Hub Universal",   "https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3"}
+    {"Hub Universal",   "https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3"},
+    {"Salvatore",       "https://raw.githubusercontent.com/H20CalibreYT/Salvatore/main/loader.lua", "Pode conter sistema de chave (key system)"}
 }
 
 for _, script in ipairs(scripts) do
     Tabs.Scripts:AddButton({
         Title = script[1],
-        Description = "Clique para executar",
+        Description = script[3] or "Clique para executar",
+        Callback = function()
+            loadstring(game:HttpGet(script[2]))()
+        end
+    })
+end
+
+-- Scripts de comandos/admins
+local comandos = {
+    {"Nameless Admin", "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"},
+    {"Infinite Yield", "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"},
+    {"Reviz Admin", "https://pastebin.com/raw/Caniwq2N"},
+    {"CMD-X", "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"},
+    {"Fates Admin", "https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"},
+}
+
+for _, script in ipairs(comandos) do
+    Tabs.Comandos:AddButton({
+        Title = script[1],
+        Description = "Painel/Admin de comandos",
         Callback = function()
             loadstring(game:HttpGet(script[2]))()
         end
