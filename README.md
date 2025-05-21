@@ -49,7 +49,9 @@ local scripts = {
     {"Tiger Hub",       "https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20V3.5%20Fixed"},
     {"Aimbot",          "https://pastebin.com/raw/qtZt0Nzb"},
     {"Hub Universal",   "https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3"},
-    {"Salvatore",       "https://raw.githubusercontent.com/H20CalibreYT/Salvatore/main/loader.lua", "Pode conter sistema de chave (key system)"}
+    {"Salvatore",       "https://raw.githubusercontent.com/H20CalibreYT/Salvatore/main/loader.lua", "Pode conter sistema de chave (key system)"},
+    {"Draw FE",         "https://raw.githubusercontent.com/Affexter/Programs/refs/heads/main/scripts/tooldrawFE.lua"},
+    {"Multiplicar Tools", "https://raw.githubusercontent.com/kigredns/NeonDuplicator/refs/heads/main/Script.lua"},
 }
 
 for _, script in ipairs(scripts) do
