@@ -1,6 +1,6 @@
 -- Carregar biblioteca Fluent
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local version = "2"
+local version = "2.0"
 
 -- Criar janela principal
 local Window = Fluent:CreateWindow({
