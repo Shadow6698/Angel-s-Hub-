@@ -19,7 +19,7 @@ local Tabs = {
     Scripts = Window:AddTab({ Title = "Scripts", Icon = "code" }),
     DeadRealls = Window:AddTab({ Title = "Dead Realls [Trilhos Mortos]", Icon = "skull" }),
     Comandos = Window:AddTab({ Title = "Scripts de Comandos", Icon = "terminal" }),
-    BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }), -- NOVA ABA AQUI
+    BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }),
 }
 
 -- Créditos
@@ -52,6 +52,7 @@ local scripts = {
     {"Salvatore",       "https://raw.githubusercontent.com/H20CalibreYT/Salvatore/main/loader.lua", "Pode conter sistema de chave (key system)"},
     {"Draw FE",         "https://raw.githubusercontent.com/Affexter/Programs/refs/heads/main/scripts/tooldrawFE.lua"},
     {"Multiplicar Tools", "https://raw.githubusercontent.com/kigredns/NeonDuplicator/refs/heads/main/Script.lua"},
+    {"Chaos Hub",       "https://raw.githubusercontent.com/Luscaa22/Calabocaa/refs/heads/main/ChaosHub"},
 }
 
 for _, script in ipairs(scripts) do
@@ -125,7 +126,7 @@ Tabs.DeadRealls:AddButton({
     end
 })
 
--- Scripts para Blox Fruits (nova aba)
+-- Scripts para Blox Fruits
 local bloxFruitsScripts = {
     {"Zen Hub", "https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Main"},
     {"Hoho Hub", "https://raw.githubusercontent.com/acsu123/HOHO_H/main/HOHOHub.lua", "Pode ter key system"},
