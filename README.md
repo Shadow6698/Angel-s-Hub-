@@ -20,13 +20,16 @@ local Tabs = {
     DeadRealls = Window:AddTab({ Title = "Dead Realls [Trilhos Mortos]", Icon = "skull" }),
     Comandos = Window:AddTab({ Title = "Scripts de Comandos", Icon = "terminal" }),
     BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }),
-    Executores = Window:AddTab({ Title = "Executores", Icon = "code" }), -- Nova aba
+    Outros = Window:AddTab({ Title = "Outros", Icon = "grid" }),
+    Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "home" }),
+    ScriptsExtras = Window:AddTab({ Title = "Scripts Extras", Icon = "zap" }),
+    Plugins = Window:AddTab({ Title = "Plugins", Icon = "plug" })
 }
 
 -- Créditos
 Tabs.Creditos:AddParagraph({
     Title = "Créditos",
-    Content = "Script feito por:\nNightmare"
+    Content = "Script feito por:\nNightmare e julia"
 })
 
 -- Scripts principais
@@ -147,11 +150,78 @@ for _, script in ipairs(bloxFruitsScripts) do
     })
 end
 
--- Script na aba "Executores"
-Tabs.Executores:AddButton({
+-- Aba Outros
+Tabs.Outros:AddButton({
     Title = "Angel Executor",
-    Description = "Executor feito por Angel",
+    Description = "Executor Angel incorporado",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Executor-script/main/Main.txt"))()
+    end
+})
+
+Tabs.Outros:AddButton({
+    Title = "Sky Hub",
+    Description = "Sky Hub FE Trolling GUI",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+    end
+})
+
+-- Aba Brookhaven
+Tabs.Brookhaven:AddButton({
+    Title = "Gumball Hub",
+    Description = "Gumball Hub Brookhaven",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JaozinScripts/Gumball-Hub/refs/heads/main/GumballHubRetorn2.1.1.1.lua"))()
+    end
+})
+
+Tabs.Brookhaven:AddButton({
+    Title = "Sander X",
+    Description = "Sander X v3.30",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/sXPiterXs1111/Sanderxv3.30/main/sanderx3.30')))()
+    end
+})
+
+Tabs.Brookhaven:AddButton({
+    Title = "Chaos Hub",
+    Description = "Chaos Hub Brookhaven",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Luscaa22/Calabocaa/refs/heads/main/ChaosHub"))()
+    end
+})
+
+-- Scripts Extras
+Tabs.ScriptsExtras:AddButton({
+    Title = "Anti Lag Universal",
+    Description = "Reduz o lag no jogo",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Anti-Lag/main/Main.txt"))()
+    end
+})
+
+Tabs.ScriptsExtras:AddButton({
+    Title = "Item Finder",
+    Description = "Localizador de itens FE",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Item-Finder/main/Main.txt"))()
+    end
+})
+
+-- Plugins (novos adicionados)
+Tabs.Plugins:AddButton({
+    Title = "Script Anti Crash",
+    Description = "Previne bugs que causam crash",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Script-Anti-Crash/main/Main.txt"))()
+    end
+})
+
+Tabs.Plugins:AddButton({
+    Title = "Script Anti Reset",
+    Description = "Impede que você resete",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Script-Anti-Reset/main/Main.txt"))()
     end
 })
