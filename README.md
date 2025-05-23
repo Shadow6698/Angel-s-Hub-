@@ -22,8 +22,6 @@ local Tabs = {
     BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }),
     Outros = Window:AddTab({ Title = "Outros", Icon = "grid" }),
     Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "home" }),
-    ScriptsExtras = Window:AddTab({ Title = "Scripts Extras", Icon = "zap" }),
-    Plugins = Window:AddTab({ Title = "Plugins", Icon = "plug" })
 }
 
 -- Créditos
@@ -88,7 +86,7 @@ for _, script in ipairs(comandos) do
     })
 end
 
--- Aba Dead Realls com 5 hubs
+-- Aba Dead Realls
 Tabs.DeadRealls:AddButton({
     Title = "Hub 1",
     Description = "Script com chave (key system)",
@@ -189,39 +187,5 @@ Tabs.Brookhaven:AddButton({
     Description = "Chaos Hub Brookhaven",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Luscaa22/Calabocaa/refs/heads/main/ChaosHub"))()
-    end
-})
-
--- Scripts Extras
-Tabs.ScriptsExtras:AddButton({
-    Title = "Anti Lag Universal",
-    Description = "Reduz o lag no jogo",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Anti-Lag/main/Main.txt"))()
-    end
-})
-
-Tabs.ScriptsExtras:AddButton({
-    Title = "Item Finder",
-    Description = "Localizador de itens FE",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Item-Finder/main/Main.txt"))()
-    end
-})
-
--- Plugins (novos adicionados)
-Tabs.Plugins:AddButton({
-    Title = "Script Anti Crash",
-    Description = "Previne bugs que causam crash",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Script-Anti-Crash/main/Main.txt"))()
-    end
-})
-
-Tabs.Plugins:AddButton({
-    Title = "Script Anti Reset",
-    Description = "Impede que você resete",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Script-Anti-Reset/main/Main.txt"))()
     end
 })
