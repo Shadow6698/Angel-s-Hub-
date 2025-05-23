@@ -20,6 +20,7 @@ local Tabs = {
     DeadRealls = Window:AddTab({ Title = "Dead Realls [Trilhos Mortos]", Icon = "skull" }),
     Comandos = Window:AddTab({ Title = "Scripts de Comandos", Icon = "terminal" }),
     BloxFruits = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" }),
+    Executores = Window:AddTab({ Title = "Executores", Icon = "code" }), -- Nova aba
 }
 
 -- Créditos
@@ -145,3 +146,12 @@ for _, script in ipairs(bloxFruitsScripts) do
         end
     })
 end
+
+-- Script na aba "Executores"
+Tabs.Executores:AddButton({
+    Title = "Angel Executor",
+    Description = "Executor feito por Angel",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow6698/Executor-script/main/Main.txt"))()
+    end
+})
